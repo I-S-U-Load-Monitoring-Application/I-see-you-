@@ -94,19 +94,7 @@ json
 }
 Keys must be Firebase‑safe (no ., $, #, [, ], /).
 
-📱 App Structure
-Code
-lib/
-├── Screens/
-│   └── device_screen.dart       # UI for managing devices & live analysis
-├── Services/
-│   ├── ai_services_provider.dart # Sliding window, inference, listeners
-│   ├── ai_data_service.dart      # Model metadata & readiness checks
-│   └── local_model_service.dart  # TFLite model load/unload/run
-├── widgets/
-│   ├── device_card.dart
-│   └── devices.dart
-└── main.dart
+
 🔌 Data Flow
 Add Device → Writes to /users/{uid}/devices → UI updates via .onValue listener.
 
